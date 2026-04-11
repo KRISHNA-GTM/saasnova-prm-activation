@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-         tailwind.config = {
+        tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: {
@@ -115,7 +115,6 @@
     <!-- Subtle Background Glow -->
     <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[600px] bg-gradient-to-b from-slate-50 to-white -z-10 rounded-[100%] opacity-50 blur-3xl"></div>
 
-    <!-- Reduced top and bottom padding here -->
     <div class="max-w-[1200px] mx-auto px-6 pt-10 pb-12 md:pt-12 md:pb-16 relative z-10">
         <div class="grid grid-cols-1 lg:grid-cols-[1fr_480px] gap-12 items-center">
 
@@ -132,16 +131,13 @@
                     your revenue.
                 </h1>
 
+                <!-- Hero Upper: Focused purely on Threat & Speed -->
                 <p class="text-lg text-slate-600 leading-relaxed mb-4 font-normal max-w-[600px]">
                     <span class="font-semibold text-slate-900">AWS</span> is freezing ACE pipeline access and MDF allocations for ISVs that do not have an active Partner Revenue Measurement (PRM) integration by July 31st.
                 </p>
 
-                <p class="text-lg text-slate-600 leading-relaxed mb-4 font-normal max-w-[600px]">
-                    This is not optional. It is a deadline set by <span class="font-semibold text-slate-900">AWS</span>. We handle the entire activation for you in just 3 days. No internal engineers required.
-                </p>
-
                 <p class="text-lg text-slate-600 leading-relaxed mb-8 font-normal max-w-[600px]">
-                    <span class="font-semibold text-saasnova">SaaSNova</span> leads the AWS-aligned GTM, compliance, and activation workflow. <span class="font-semibold text-rysun">Rysun</span> delivers the certified 3-day technical implementation.
+                    This is not optional. It is a deadline set by <span class="font-semibold text-slate-900">AWS</span>. We handle the entire activation for you in just 3 days. No internal engineers required.
                 </p>
                 
                 <form action="https://www.paypal.com/ncp/payment/3DVTQRUKEU426" method="post" target="_blank" class="mb-5">
@@ -157,11 +153,15 @@
                     Secure checkout via PayPal. Service begins within hours.
                 </div>
 
-                <!-- Intro attribution block -->
+                <!-- Hero Lower Gray Box: Focused purely on Authority/Partnership with Brand Colors -->
                 <div class="mt-8 bg-slate-50 border border-slate-200 rounded-xl p-5 text-left">
-                    <p class="text-slate-700 text-[14px] leading-relaxed mb-3"><span class="font-bold text-slate-900">SaaSNova</span> designed this PRM Activation Program to give ISVs a zero-friction, AWS-validated path to compliance before the July 31 enforcement.</p>
-                    <p class="text-slate-700 text-[14px] leading-relaxed mb-3"><span class="font-bold text-slate-900">Rysun</span> executes the certified 3-day technical implementation.</p>
-                    <p class="text-slate-600 text-[14px] leading-relaxed">This combined motion ensures your PRM is activated, validated, and attributed without pulling your internal engineers off your roadmap.</p>
+                    <div class="font-bold text-slate-900 text-[15px] mb-2 flex items-center gap-2">
+                        <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" class="text-aws"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        <span class="text-saasnova">SaaSNova</span> x <span class="text-rysun">Rysun</span>: Official Program Alignment
+                    </div>
+                    <p class="text-slate-600 text-[14px] leading-relaxed">
+                        This joint program is the only "done-for-you" path that combines <span class="font-bold text-saasnova">SaaSNova's</span> GTM compliance framework with <span class="font-bold text-rysun">Rysun's</span> certified technical implementation. We ensure 100% AWS validation so your revenue attribution is never interrupted.
+                    </p>
                 </div>
             </div>
 
@@ -232,20 +232,18 @@
         </div>
         <div class="border-t border-slate-200 py-6 px-6 text-center bg-white">
             <p class="text-slate-800 text-lg md:text-xl font-medium max-w-[900px] mx-auto leading-relaxed">
-                <span class="font-bold text-slate-900">SaaSNova</span> is the world's first GTM Operating System for SaaS ISVs scaling with AWS. PRM activation is one of the core compliance unlocks inside our GTM Sprint.
+                <span class="font-bold text-saasnova">SaaSNova</span> is the world's first GTM Operating System for SaaS ISVs scaling with AWS. PRM activation is one of the core compliance unlocks inside our GTM Sprint.
             </p>
         </div>
     </div>
 </section>
 
 <!-- OPERATIONAL COST OF INACTION -->
-<!-- Reduced gap py-16 md:py-20 -->
 <section class="py-16 md:py-20 bg-slate-50 reveal">
     <div class="max-w-[1200px] mx-auto px-6">
-        <!-- Reduced mb-10 -->
         <div class="max-w-[800px] mx-auto text-center mb-10 md:mb-12">
             <div class="text-[11px] uppercase tracking-widest text-red-600 font-bold mb-4">The Operational Cost of Inaction</div>
-            <h2 class="text-3xl sm:text-4xl md:text-[40px] font-extrabold leading-tight tracking-tight mb-4 text-slate-900">Missing this deadline does not pause your partnership. It ends it.</h2>
+            <h2 class="text-3xl sm:text-4xl md:text-[40px] font-extrabold leading-tight tracking-tight mb-4 text-slate-900">Missing this deadline does not pause your partnership, it ends it.</h2>
             <p class="text-lg text-slate-600 leading-relaxed font-normal max-w-[680px] mx-auto">
                 Without active PRM, <span class="font-semibold text-slate-900">AWS</span> has no record of your revenue contribution. The system treats you as inactive. Consequences are automatic and immediate after July 31.
             </p>
@@ -345,7 +343,6 @@
                 <span class="dot-green"></span>
                 <span class="text-green-700 font-bold text-[11px] uppercase tracking-widest">Done in 3 Days</span>
             </div>
-            <div class="text-[11px] uppercase tracking-widest font-bold mb-3 text-slate-500">Technical Execution Delivered by <span class="text-slate-900">Rysun Labs</span></div>
             <h2 class="text-3xl sm:text-4xl md:text-[40px] font-extrabold leading-tight tracking-tight text-slate-900 mb-4">The 3-Day Technical Sprint</h2>
             <p class="text-lg text-slate-600 leading-relaxed font-normal">
                 We deploy and validate your integration rapidly, ensuring you meet the deadline without pulling your engineering team off their core product roadmap. We have it done in just 3 days.
@@ -371,7 +368,7 @@
                     <span class="text-3xl font-extrabold text-slate-900">2</span>
                 </div>
                 <h3 class="text-xl font-bold mb-3 text-slate-900">Technical Implementation</h3>
-                <p class="text-slate-600 text-[15px] leading-relaxed max-w-[320px] mx-auto">Engineers deploy SDK overrides or IaC tagging modules securely without impacting your core product operations.</p>
+                <p class="text-slate-600 text-[15px] leading-relaxed max-w-[320px] mx-auto">Engineers deploy SDK overrides or IaC tagging modules securely, without impacting your core product operations.</p>
             </div>
             
             <!-- Step 3 -->
@@ -403,7 +400,7 @@
                     <tr class="bg-slate-50 border-b border-slate-200">
                         <th class="p-6 text-slate-600 text-[15px] font-bold w-[30%]">Execution Vector</th>
                         <th class="p-6 text-slate-600 text-[15px] font-bold w-[35%] border-l border-slate-200">Internal Engineering Team</th>
-                        <th class="p-6 text-slate-900 text-[15px] font-bold w-[35%] border-l border-slate-200">SaaSNova &times; Rysun</th>
+                        <th class="p-6 text-slate-900 text-[15px] font-bold w-[35%] border-l border-slate-200"><span class="text-saasnova">SaaSNova</span> &times; <span class="text-rysun">Rysun</span></th>
                     </tr>
                 </thead>
                 <tbody class="divide-y divide-slate-100">
@@ -433,12 +430,12 @@
     </div>
 </section>
 
-<!-- LEADERSHIP PERSPECTIVES (REPLACED AUTHORITY BLOCK) -->
+<!-- LEADERSHIP PERSPECTIVES -->
 <section class="py-16 md:py-20 bg-slate-50 border-y border-slate-200 reveal">
     <div class="max-w-[1200px] mx-auto px-6">
         <div class="text-center mb-10">
             <div class="text-[11px] uppercase tracking-widest text-slate-500 font-bold mb-4">Leadership Perspectives</div>
-            <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900">Why we built the 3-Day Sprint.</h2>
+            <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900">Why we built a zero-friction compliance path.</h2>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-[1000px] mx-auto">
@@ -464,7 +461,7 @@
             <div class="bg-white border border-slate-200 rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow">
                 <svg width="32" height="32" fill="#D97706" viewBox="0 0 24 24" class="opacity-20 mb-4"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
                 <p class="text-slate-700 text-[16px] leading-relaxed italic mb-6">
-                    "Technical compliance should be an accelerant, not a blocker. Our certified IaC modules guarantee your AWS PRM integration is secure, compliant, and completed in exactly three days—no guesswork."
+                    "Technical compliance should be an accelerant, not a blocker. Our certified IaC modules guarantee your AWS PRM integration is secure, compliant, and completed seamlessly—no guesswork."
                 </p>
                 <div class="flex items-center gap-3">
                     <div class="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center shrink-0 overflow-hidden border border-slate-300">
@@ -592,9 +589,9 @@
             <span class="text-red-700 font-bold text-[11px] uppercase tracking-widest">Enforcement: July 31, 2026</span>
         </div>
         
-        <h2 class="text-4xl sm:text-5xl md:text-[56px] font-extrabold leading-[1.05] tracking-tight mb-5 text-slate-900">
+        <h2 class="text-4xl sm:text-5xl md:text-[50px] font-extrabold leading-[1.05] tracking-tight mb-5 text-slate-900">
             The deadline doesn't move,<br>
-            Your PRM must.
+            your PRM must.
         </h2>
         
         <p class="text-slate-600 text-lg md:text-xl font-normal leading-relaxed max-w-[560px] mx-auto mb-10">
@@ -661,8 +658,8 @@
         </div>
         
         <!-- Copyright Banner -->
-        <div class="pt-6 border-t border-slate-200 flex justify-center text-center">
-            <p class="text-slate-500 text-[13px] font-medium">&copy; 2026 PRM Activation Program Architected by <span class="font-bold text-slate-900">SaaSNova</span>. Technical Execution Delivered in Partnership with <span class="font-bold text-slate-900">Rysun Labs</span>. Service execution begins post-payment.</p>
+        <div class="pt-6 border-t border-slate-200 flex justify-left text-left">
+            <p class="text-slate-500 text-[13px] font-medium">&copy; 2026 PRM Activation Program Architected by <span class="font-semibold text-saasnova">SaaSNova</span>. Technical Execution Delivered in Partnership with <span class="font-semibold text-rysun">Rysun Labs</span>. Service execution begins post-payment.</p>
         </div>
 
     </div>
