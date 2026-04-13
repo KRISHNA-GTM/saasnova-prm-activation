@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>AWS PRM Activation | SaaSNova GTM Program | Deadline July 31, 2026</title>
-    <meta name="description" content="SaaSNova owns AWS PRM activation. Certified 3-day technical implementation by Rysun Labs. Zero-friction compliance before the July 31 enforcement deadline."/>
+    <title>AWS PRM Activation | SaaSNova & Rysun | Deadline July 31, 2026</title>
+    <meta name="description" content="Turnkey AWS PRM activation. Certified 3-day technical implementation and compliance validation before the July 31 enforcement deadline."/>
     <link rel="icon" type="image/png" sizes="16x16" href="/logo-favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/logo-favicon-32x32.png">
     <link rel="icon" type="image/png" href="/logo-favicon.png">
@@ -23,8 +23,8 @@
                     colors: {
                         aws: '#FF9900',
                         'aws-hover': '#F58E00',
-                        saasnova: '#008BF8', /* Exact SaaSNova Blue */
-                        rysun: '#D97706',    /* Rysun Brand Orange/Amber */
+                        saasnova: '#008BF8',
+                        rysun: '#D97706',
                     },
                     boxShadow: {
                         'premium': '0 4px 20px -2px rgba(15, 23, 42, 0.05), 0 1px 3px rgba(15, 23, 42, 0.03)',
@@ -45,7 +45,6 @@
             -moz-osx-font-smoothing: grayscale;
         }
         
-        /* Premium Reveal Animation */
         .reveal { 
             opacity: 0; 
             transform: translateY(30px) scale(0.98); 
@@ -56,7 +55,6 @@
             transform: translateY(0) scale(1); 
         }
         
-        /* Status Tags & Indicators */
         .dot-red { width: 6px; height: 6px; border-radius: 50%; background: #EF4444; display: inline-block; animation: pulseDot 2s ease-in-out infinite; }
         .dot-green { width: 6px; height: 6px; border-radius: 50%; background: #22C55E; display: inline-block; }
         .dot-blue { width: 6px; height: 6px; border-radius: 50%; background: #008BF8; display: inline-block; }
@@ -65,11 +63,21 @@
         @keyframes ticker { from { transform: translateX(0) } to { transform: translateX(-50%) } }
         @keyframes pulseDot { 0%,100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.5; transform: scale(0.8); } }
         
-        /* Table Scrollbar Customization */
         .custom-scrollbar::-webkit-scrollbar { height: 6px; }
         .custom-scrollbar::-webkit-scrollbar-track { background: #f1f5f9; border-radius: 4px; }
         .custom-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
         .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+        .fade-in { animation: fadeIn 0.3s ease-out forwards; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        .slide-up { animation: slideUp 0.3s ease-out forwards; }
+        @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        
+        /* Modal Scrollbar */
+        .modal-scroll::-webkit-scrollbar { width: 6px; }
+        .modal-scroll::-webkit-scrollbar-track { background: transparent; }
+        .modal-scroll::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+        .modal-scroll::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
     </style>
 </head>
 <body class="selection:bg-aws/20 selection:text-slate-900">
@@ -77,10 +85,10 @@
 <!-- TICKER -->
 <div class="bg-red-600 border-b border-red-700 overflow-hidden relative py-2.5">
     <div class="flex animate-[ticker_28s_linear_infinite] whitespace-nowrap">
-        <span class="mr-16 font-bold text-[11px] uppercase tracking-widest text-white">AWS MANDATORY ENFORCEMENT: JULY 31, 2026 &nbsp;&nbsp;&nbsp; PRM ACTIVATION REQUIRED &nbsp;&nbsp;&nbsp; ACE PIPELINE FREEZES WITHOUT COMPLIANCE &nbsp;&nbsp;&nbsp; ACTIVATE NOW</span>
-        <span class="mr-16 font-bold text-[11px] uppercase tracking-widest text-white">AWS MANDATORY ENFORCEMENT: JULY 31, 2026 &nbsp;&nbsp;&nbsp; PRM ACTIVATION REQUIRED &nbsp;&nbsp;&nbsp; ACE PIPELINE FREEZES WITHOUT COMPLIANCE &nbsp;&nbsp;&nbsp; ACTIVATE NOW</span>
-        <span class="mr-16 font-bold text-[11px] uppercase tracking-widest text-white">AWS MANDATORY ENFORCEMENT: JULY 31, 2026 &nbsp;&nbsp;&nbsp; PRM ACTIVATION REQUIRED &nbsp;&nbsp;&nbsp; ACE PIPELINE FREEZES WITHOUT COMPLIANCE &nbsp;&nbsp;&nbsp; ACTIVATE NOW</span>
-        <span class="mr-16 font-bold text-[11px] uppercase tracking-widest text-white">AWS MANDATORY ENFORCEMENT: JULY 31, 2026 &nbsp;&nbsp;&nbsp; PRM ACTIVATION REQUIRED &nbsp;&nbsp;&nbsp; ACE PIPELINE FREEZES WITHOUT COMPLIANCE &nbsp;&nbsp;&nbsp; ACTIVATE NOW</span>
+        <span class="mr-16 font-bold text-[11px] uppercase tracking-widest text-white">AWS ENFORCEMENT: JULY 31, 2026 &nbsp;&nbsp;&nbsp; PRM ACTIVATION REQUIRED FOR REVENUE ATTRIBUTION &nbsp;&nbsp;&nbsp; MAINTAIN TIER ELIGIBILITY &nbsp;&nbsp;&nbsp; ACTIVATE NOW</span>
+        <span class="mr-16 font-bold text-[11px] uppercase tracking-widest text-white">AWS ENFORCEMENT: JULY 31, 2026 &nbsp;&nbsp;&nbsp; PRM ACTIVATION REQUIRED FOR REVENUE ATTRIBUTION &nbsp;&nbsp;&nbsp; MAINTAIN TIER ELIGIBILITY &nbsp;&nbsp;&nbsp; ACTIVATE NOW</span>
+        <span class="mr-16 font-bold text-[11px] uppercase tracking-widest text-white">AWS ENFORCEMENT: JULY 31, 2026 &nbsp;&nbsp;&nbsp; PRM ACTIVATION REQUIRED FOR REVENUE ATTRIBUTION &nbsp;&nbsp;&nbsp; MAINTAIN TIER ELIGIBILITY &nbsp;&nbsp;&nbsp; ACTIVATE NOW</span>
+        <span class="mr-16 font-bold text-[11px] uppercase tracking-widest text-white">AWS ENFORCEMENT: JULY 31, 2026 &nbsp;&nbsp;&nbsp; PRM ACTIVATION REQUIRED FOR REVENUE ATTRIBUTION &nbsp;&nbsp;&nbsp; MAINTAIN TIER ELIGIBILITY &nbsp;&nbsp;&nbsp; ACTIVATE NOW</span>
     </div>
 </div>
 
@@ -100,19 +108,17 @@
             <div class="hidden md:flex items-center gap-2 text-slate-500 text-sm font-semibold">
                 <span class="dot-neutral"></span> Deadline: Jul 31, 2026
             </div>
-            <form action="https://www.paypal.com/ncp/payment/3DVTQRUKEU426" method="post" target="_blank" class="m-0">
-                <button type="submit" class="inline-flex items-center justify-center gap-2 bg-aws hover:bg-aws-hover text-slate-900 font-bold uppercase tracking-[0.06em] rounded-md px-4 py-2.5 text-[13px] md:text-sm transition-all duration-200 shadow-btn hover:shadow-btn-hover hover:-translate-y-[1px] active:translate-y-[1px] active:shadow-none">
-                    <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-                    <span class="hidden sm:inline">ACTIVATE PRM NOW</span>
-                    <span class="inline sm:hidden">ACTIVATE</span>
-                </button>
-            </form>
+            <button onclick="openModal()" class="inline-flex items-center justify-center gap-2 bg-aws hover:bg-aws-hover text-slate-900 font-bold uppercase tracking-[0.06em] rounded-md px-4 py-2.5 text-[13px] md:text-sm transition-all duration-200 shadow-btn hover:shadow-btn-hover hover:-translate-y-[1px] active:translate-y-[1px] active:shadow-none">
+                <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                <span class="hidden sm:inline">ACTIVATE PRM NOW</span>
+                <span class="inline sm:hidden">ACTIVATE</span>
+            </button>
         </div>
     </div>
 </nav>
 
-<!-- HERO --><section class="relative bg-white border-b border-slate-200 overflow-hidden">
-    <!-- Subtle Background Glow -->
+<!-- HERO -->
+<section class="relative bg-white border-b border-slate-200 overflow-hidden" id="top">
     <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[600px] bg-gradient-to-b from-slate-50 to-white -z-10 rounded-[100%] opacity-50 blur-3xl"></div>
 
     <div class="max-w-[1200px] mx-auto px-6 pt-8 pb-10 md:pt-10 md:pb-12 relative z-10">
@@ -133,39 +139,39 @@
 
                 <!-- Hero Upper: Definition & Threat -->
                 <p class="text-lg text-slate-600 leading-relaxed mb-4 font-normal max-w-[600px]">
-                    <strong class="text-slate-900">Partner Revenue Measurement (PRM) is the mandatory framework linking your software sales to AWS infrastructure usage.</strong> 
-                    Currently, <span class="font-semibold text-slate-900">AWS</span> is freezing ACE pipeline access and MDF allocations for ISVs that do not have an active PRM integration by July 31st.
+                    <strong class="text-slate-900">Partner Revenue Measurement (PRM) is the mandatory telemetry framework linking your software sales to AWS infrastructure usage.</strong> 
+                    Without PRM, AWS cannot attribute your revenue, stalling your partner tier progression and jeopardizing eligibility for MDF and ACE programs.
                 </p>
 
                 <p class="text-lg text-slate-600 leading-relaxed mb-8 font-normal max-w-[600px]">
-                    This is not optional. We handle the entire technical activation for you in just 3 days. No internal engineers required.
+                    This is an infrastructure requirement, not a marketing exercise. We handle the exact compliance architecture and technical implementation in 3 days. No internal engineers required.
                 </p>
                 
-                <form action="https://www.paypal.com/ncp/payment/3DVTQRUKEU426" method="post" target="_blank" class="mb-5">
-                    <button type="submit" class="inline-flex items-center justify-center gap-2.5 bg-aws hover:bg-aws-hover text-slate-900 font-bold uppercase tracking-[0.06em] rounded-md px-8 py-4 text-base transition-all duration-200 shadow-btn hover:shadow-btn-hover hover:-translate-y-[1px] active:translate-y-[1px] active:shadow-none w-full sm:w-auto">
+                <div class="mb-5">
+                    <button onclick="openModal()" class="inline-flex items-center justify-center gap-2.5 bg-aws hover:bg-aws-hover text-slate-900 font-bold uppercase tracking-[0.06em] rounded-md px-8 py-4 text-base transition-all duration-200 shadow-btn hover:shadow-btn-hover hover:-translate-y-[1px] active:translate-y-[1px] active:shadow-none w-full sm:w-auto">
                         <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
                         ACTIVATE PRM NOW 
                         <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" class="ml-1"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
                     </button>
-                </form>
+                </div>
 
                 <div class="flex items-center gap-2 text-slate-500 text-[13px] font-semibold">
                     <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" class="text-slate-400 shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
-                    Secure checkout via PayPal. Service begins within hours.
+                    Secure checkout. Architecture review begins immediately.
                 </div>
 
                 <!-- Hero Lower Gray Box: Partnership & Credibility -->
                 <div class="mt-8 bg-slate-50 border border-slate-200 rounded-xl p-5 text-left">
                     <div class="font-bold text-slate-900 text-[15px] mb-2 flex items-center gap-2">
                         <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" class="text-aws"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                        <span class="text-saasnova">SaaSNova</span> x <span class="text-rysun">Rysun</span>: Official Program Alignment
+                        <span class="text-saasnova">SaaSNova</span> x <span class="text-rysun">Rysun</span>: End-to-End Compliance
                     </div>
                     <p class="text-slate-600 text-[14px] leading-relaxed mb-4">
-                        This joint program is the only "done-for-you" path combining <span class="font-bold text-saasnova">SaaSNova's</span> GTM framework with <span class="font-bold text-rysun">Rysun's</span> certified technical implementation. Ensure 100% AWS validation.
+                        End-to-end compliance requires two layers: <span class="font-bold text-saasnova">SaaSNova</span> designs the exact telemetry schema and validates the AWS CloudTrail logs, while <span class="font-bold text-rysun">Rysun</span> handles the SOC-2 certified code deployment.
                     </p>
                     <div class="bg-white border border-slate-200 rounded-lg py-2 px-3 inline-flex items-center gap-2 shadow-sm">
                         <span class="dot-green"></span>
-                        <span class="text-slate-700 text-[12px] font-bold">Built from real PRM activations across SaaS, AI, and DevOps ISVs.</span>
+                        <span class="text-slate-700 text-[12px] font-bold">100% Turnkey telemetry implementation.</span>
                     </div>
                 </div>
             </div>
@@ -183,20 +189,20 @@
                 <!-- Status Blocks -->
                 <div class="flex flex-col gap-3">
                     <div class="flex justify-between items-center bg-slate-50 border border-slate-200 rounded-xl p-4">
-                        <span class="font-semibold text-sm text-slate-900">ACE Pipeline Access</span>
-                        <span class="bg-red-50 border border-red-200 text-red-600 text-[11px] font-bold px-2.5 py-1 rounded-md uppercase tracking-widest flex items-center gap-1.5 shrink-0"><span class="dot-red"></span> BLOCKED</span>
+                        <span class="font-semibold text-sm text-slate-900">AWS Revenue Attribution</span>
+                        <span class="bg-red-50 border border-red-200 text-red-600 text-[11px] font-bold px-2.5 py-1 rounded-md uppercase tracking-widest flex items-center gap-1.5 shrink-0"><span class="dot-red"></span> UNAVAILABLE</span>
                     </div>
                     <div class="flex justify-between items-center bg-slate-50 border border-slate-200 rounded-xl p-4">
-                        <span class="font-semibold text-sm text-slate-900">MDF Funding Approvals</span>
-                        <span class="bg-red-50 border border-red-200 text-red-600 text-[11px] font-bold px-2.5 py-1 rounded-md uppercase tracking-widest flex items-center gap-1.5 shrink-0"><span class="dot-red"></span> BLOCKED</span>
+                        <span class="font-semibold text-sm text-slate-900">Partner Tier Progression</span>
+                        <span class="bg-red-50 border border-red-200 text-red-600 text-[11px] font-bold px-2.5 py-1 rounded-md uppercase tracking-widest flex items-center gap-1.5 shrink-0"><span class="dot-red"></span> STALLED</span>
                     </div>
                     <div class="flex justify-between items-center bg-slate-50 border border-slate-200 rounded-xl p-4">
-                        <span class="font-semibold text-sm text-slate-900">Co-Sell with AWS Reps</span>
-                        <span class="bg-red-50 border border-red-200 text-red-600 text-[11px] font-bold px-2.5 py-1 rounded-md uppercase tracking-widest flex items-center gap-1.5 shrink-0"><span class="dot-red"></span> BLOCKED</span>
+                        <span class="font-semibold text-sm text-slate-900">MDF / ACE Eligibility</span>
+                        <span class="bg-red-50 border border-red-200 text-red-600 text-[11px] font-bold px-2.5 py-1 rounded-md uppercase tracking-widest flex items-center gap-1.5 shrink-0"><span class="dot-red"></span> AT RISK</span>
                     </div>
                     <div class="flex justify-between items-center bg-green-50 border border-green-200 rounded-xl p-4">
                         <span class="font-bold text-sm text-green-700">Active PRM Integration</span>
-                        <span class="bg-green-50 border border-green-200 text-green-600 text-[11px] font-bold px-2.5 py-1 rounded-md uppercase tracking-widest flex items-center gap-1.5 shrink-0"><span class="dot-green"></span> RESOLVES ALL</span>
+                        <span class="bg-green-50 border border-green-200 text-green-600 text-[11px] font-bold px-2.5 py-1 rounded-md uppercase tracking-widest flex items-center gap-1.5 shrink-0"><span class="dot-green"></span> RESTORES ATTRIBUTION</span>
                     </div>
                 </div>
 
@@ -204,7 +210,7 @@
                 <div class="mt-6 pt-5 border-t border-slate-100 flex items-center justify-center gap-2.5">
                     <img src="aws-logo.png" alt="AWS" class="h-5 object-contain"
                         onerror="this.outerHTML='<span class=\'font-extrabold text-[14px] text-slate-800\'>AWS</span>'">
-                    <span class="text-slate-500 text-xs font-bold uppercase tracking-wide">Certified Partner Execution</span>
+                    <span class="text-slate-500 text-xs font-bold uppercase tracking-wide">Certified Telemetry Execution</span>
                 </div>
             </div>
 
@@ -212,31 +218,31 @@
     </div>
 </section>
 
-<!-- TRUST SYMMETRY STRIP -->
+<!-- TRUST SYMMETRY STRIP: THE 50/50 BALANCE -->
 <div class="bg-slate-50 border-b border-slate-200 shadow-sm relative z-20">
     <div class="max-w-[1200px] mx-auto py-8 px-6 grid grid-cols-1 md:grid-cols-2 gap-8 divide-y md:divide-y-0 md:divide-x divide-slate-200">
         
-        <!-- SaaSNova GTM Block -->
+        <!-- SaaSNova Compliance Block -->
         <div class="flex flex-col items-center md:items-start gap-4 md:pr-8">
             <div class="text-[11px] font-bold text-saasnova uppercase tracking-widest mb-1 flex items-center gap-2">
-                <span class="dot-blue"></span> <span class="text-saasnova">SaaSNova</span> GTM Methodology
+                <span class="dot-blue"></span> <span class="text-saasnova">SaaSNova</span> Compliance Architecture
             </div>
             <div class="flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-3">
                 <div class="flex items-center gap-2 text-[13px] font-semibold text-slate-700">
                     <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" class="text-saasnova"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-                    ISV Pipeline Qualified
+                    Telemetry Strategy Mapped
                 </div>
                 <div class="flex items-center gap-2 text-[13px] font-semibold text-slate-700">
                     <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" class="text-saasnova"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-                    GTM Sprint Proven
+                    CloudTrail Log Validated
                 </div>
                 <div class="flex items-center gap-2 text-[13px] font-semibold text-slate-700">
                     <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" class="text-saasnova"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"/></svg>
-                    ACE Co-Sell Activated
+                    Revenue Attribution Aligned
                 </div>
                 <div class="flex items-center gap-2 text-[13px] font-semibold text-slate-700">
                     <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" class="text-saasnova"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"/></svg>
-                    Hyperscaler Growth Designed
+                    AWS Audit Defensible
                 </div>
             </div>
         </div>
@@ -253,15 +259,15 @@
                 </div>
                 <div class="flex items-center gap-2 text-[13px] font-semibold text-slate-700">
                     <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" class="text-rysun"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-                    AWS Well-Architected
+                    SDK User-Agent Overrides
                 </div>
                 <div class="flex items-center gap-2 text-[13px] font-semibold text-slate-700">
                     <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" class="text-rysun"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"/></svg>
-                    GDPR-Conscious Design
+                    IaC Tagging Implementations
                 </div>
                 <div class="flex items-center gap-2 text-[13px] font-semibold text-slate-700">
                     <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" class="text-rysun"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"/></svg>
-                    100% AWS Compliance
+                    Zero-Friction Deployment
                 </div>
             </div>
         </div>
@@ -275,18 +281,20 @@
         <div class="flex flex-col md:flex-row items-center justify-between bg-slate-900 rounded-2xl p-6 md:p-8 shadow-premium">
             <div class="mb-6 md:mb-0 max-w-[500px] text-center md:text-left">
                 <div class="text-[11px] uppercase tracking-widest text-aws font-bold mb-2">Who This Is For</div>
-                <h3 class="text-xl sm:text-2xl font-bold text-white mb-2">High-Velocity AWS Partners</h3>
-                <p class="text-slate-400 text-sm leading-relaxed">Designed explicitly for companies actively transacting via AWS Marketplace or currently enrolled in the AWS ISV Accelerate Program.</p>
+                <h3 class="text-xl sm:text-2xl font-bold text-white mb-2">AWS Technology Partners</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Designed explicitly for ISVs who must implement Tagging or User Agent PRM methods to maintain AWS revenue attribution.</p>
             </div>
-            <div class="flex flex-wrap justify-center md:justify-end gap-3 sm:gap-4 w-full md:w-auto">
-                <div class="bg-slate-800 border border-slate-700 rounded-xl py-3 px-5 text-center flex-1 sm:flex-none">
-                    <div class="text-white font-bold text-[17px]">B2B SaaS</div>
-                </div>
-                <div class="bg-slate-800 border border-slate-700 rounded-xl py-3 px-5 text-center flex-1 sm:flex-none">
-                    <div class="text-white font-bold text-[17px]">AI / ML</div>
-                </div>
-                <div class="bg-slate-800 border border-slate-700 rounded-xl py-3 px-5 text-center flex-1 sm:flex-none">
-                    <div class="text-white font-bold text-[17px]">DevOps</div>
+            <div class="flex justify-center w-full md:w-auto">
+                <div class="flex flex-wrap justify-center gap-3 md:gap-4 max-w-[380px]">
+                    <div class="bg-slate-600 border border-slate-700 rounded-xl py-3 px-5 text-center flex-auto shadow-sm">
+                        <div class="text-white font-bold text-[14px] sm:text-[12px]">SaaS Providers</div>
+                    </div>
+                    <div class="bg-slate-600 border border-slate-700 rounded-xl py-3 px-5 text-center flex-auto shadow-sm">
+                        <div class="text-white font-bold text-[14px] sm:text-[12px]">Containerized Apps</div>
+                    </div>
+                    <div class="bg-slate-600 border border-slate-700 rounded-xl py-3 px-5 text-center flex-auto shadow-sm min-w-[200px]">
+                        <div class="text-white font-bold text-[14px] sm:text-[12px]">Platform Integrations</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -298,9 +306,9 @@
     <div class="max-w-[1200px] mx-auto px-6">
         <div class="max-w-[800px] mx-auto text-center mb-8 md:mb-10">
             <div class="text-[11px] uppercase tracking-widest text-red-600 font-bold mb-4">The Operational Cost of Inaction</div>
-            <h2 class="text-3xl sm:text-4xl font-extrabold leading-tight tracking-tight mb-4 text-slate-900">Missing this deadline does not pause your partnership, it ends it.</h2>
+            <h2 class="text-3xl sm:text-4xl font-extrabold leading-tight tracking-tight mb-4 text-slate-900">Without telemetry, your AWS revenue is invisible.</h2>
             <p class="text-lg text-slate-600 leading-relaxed font-normal max-w-[680px] mx-auto">
-                Without active PRM, <span class="font-semibold text-aws">AWS</span> has no record of your revenue contribution. The system treats you as inactive. Consequences are automatic after July 31.
+                Without active PRM, <span class="font-semibold text-aws">AWS</span> has no record of your revenue contribution. The system treats you as inactive, stalling your progression and risking program access.
             </p>
         </div>
 
@@ -310,27 +318,27 @@
                 <div class="w-12 h-12 rounded-xl bg-red-50 border border-red-200 flex items-center justify-center mb-5">
                     <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="#DC2626" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M3 14h18M3 6h18"/></svg>
                 </div>
-                <h3 class="text-xl font-bold mb-2 text-slate-900">Lost Marketing Funds</h3>
-                <p class="text-red-700 font-semibold text-sm mb-3">Your MDF allocation is frozen.</p>
-                <p class="text-slate-600 text-[15px] leading-relaxed">AWS suspends all co-marketing cash. You cannot apply for new MDF grants. Your Go-To-Market (GTM) budget shrinks to zero from AWS.</p>
+                <h3 class="text-xl font-bold mb-2 text-slate-900">Unrecognized Revenue</h3>
+                <p class="text-red-700 font-semibold text-sm mb-3">Your AWS spend influence is not recorded.</p>
+                <p class="text-slate-600 text-[15px] leading-relaxed">AWS telemetry relies entirely on specific tags or SDK agent strings. If these are missing, the revenue you drive on AWS is fundamentally invisible to your Partner Manager.</p>
             </div>
 
             <div class="bg-white border border-slate-200 rounded-2xl p-8 shadow-premium hover:shadow-premium-hover hover:-translate-y-1 transition-all duration-300">
                 <div class="w-12 h-12 rounded-xl bg-red-50 border border-red-200 flex items-center justify-center mb-5">
                     <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="#DC2626" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"/></svg>
                 </div>
-                <h3 class="text-xl font-bold mb-2 text-slate-900">Blocked Co-Sell Motion</h3>
-                <p class="text-red-700 font-semibold text-sm mb-3">Your ACE portal access is revoked.</p>
-                <p class="text-slate-600 text-[15px] leading-relaxed">AWS sales reps cannot work your deals. Pipeline you built stops moving. No new co-sell opportunities are accepted without active PRM.</p>
+                <h3 class="text-xl font-bold mb-2 text-slate-900">Stalled Tier Progression</h3>
+                <p class="text-red-700 font-semibold text-sm mb-3">No recorded revenue means no tier upgrades.</p>
+                <p class="text-slate-600 text-[15px] leading-relaxed">Progression in the AWS Partner Network (which unlocks MDF and ACE eligibility) is strictly quantitative. Without PRM, your metrics flatline, locking you out of advanced programs.</p>
             </div>
 
             <div class="bg-white border border-slate-200 rounded-2xl p-8 shadow-premium hover:shadow-premium-hover hover:-translate-y-1 transition-all duration-300">
                 <div class="w-12 h-12 rounded-xl bg-red-50 border border-red-200 flex items-center justify-center mb-5">
                     <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="#DC2626" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                 </div>
-                <h3 class="text-xl font-bold mb-2 text-slate-900">Internal Execution Delays</h3>
-                <p class="text-red-700 font-semibold text-sm mb-3">Assigning engineers takes 2+ weeks.</p>
-                <p class="text-slate-600 text-[15px] leading-relaxed">Your senior engineers must stop building product to decode poorly documented AWS requirements. Roadmap slips. Deadline still looms.</p>
+                <h3 class="text-xl font-bold mb-2 text-slate-900">Wasted Engineering Cycles</h3>
+                <p class="text-red-700 font-semibold text-sm mb-3">Internal teams lose weeks deciphering docs.</p>
+                <p class="text-slate-600 text-[15px] leading-relaxed">Assigning this to your core engineering team means pulling them off product features to interpret complex AWS documentation, risking incorrect implementation and audit failure.</p>
             </div>
 
         </div>
@@ -343,7 +351,7 @@
             <div class="text-[11px] uppercase tracking-widest text-saasnova font-bold mb-4">What You Get</div>
             <h2 class="text-3xl sm:text-4xl font-extrabold leading-tight tracking-tight mb-3 text-slate-900">Compliance with Context.</h2>
             <p class="text-lg text-slate-600 font-normal leading-relaxed max-w-[680px] mx-auto">
-                We don't just apply tags and configurations. We ensure your integration is validated so your AWS revenue flows, and your AWS Partner Manager can confirm it.
+                We don't just apply tags and configurations. We ensure your integration is strictly validated so your AWS revenue is accurately recorded in CloudTrail. A compliant PRM is the foundational prerequisite before advanced GTM programs can be activated.
             </p>
         </div>
 
@@ -354,10 +362,10 @@
                     <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="#008BF8" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
                 </div>
                 <div class="text-slate-400 font-mono text-sm font-bold mb-3">01</div>
-                <h3 class="text-xl font-bold mb-3 text-slate-900">AWS Policy Alignment</h3>
+                <h3 class="text-xl font-bold mb-3 text-slate-900">AWS Policy Translation</h3>
                 <div class="mb-4 flex gap-3">
                     <span class="text-slate-500 text-[10px] font-bold uppercase tracking-widest shrink-0 pt-[5px]">What</span>
-                    <span class="text-slate-600 text-[15px] leading-relaxed">We translate vague AWS requirements into exact, documented technical tickets, then execute them precisely.</span>
+                    <span class="text-slate-600 text-[15px] leading-relaxed">We translate the PRM guide into exact, documented technical tickets tailored to your stack, then execute them precisely.</span>
                 </div>
                 <div class="flex gap-3">
                     <span class="text-saasnova text-[10px] font-bold uppercase tracking-widest shrink-0 pt-[5px]">Why it matters</span>
@@ -373,11 +381,11 @@
                 <h3 class="text-xl font-bold mb-3 text-slate-900">Verified Telemetry</h3>
                 <div class="mb-4 flex gap-3">
                     <span class="text-slate-500 text-[10px] font-bold uppercase tracking-widest shrink-0 pt-[5px]">What</span>
-                    <span class="text-slate-600 text-[15px] leading-relaxed">We don't stop at deployment. We query AWS CloudTrail directly to confirm your revenue telemetry is being tracked exactly as required.</span>
+                    <span class="text-slate-600 text-[15px] leading-relaxed">We don't stop at deployment. We query AWS CloudTrail directly to confirm your <code class="bg-slate-100 text-slate-800 px-1 py-0.5 rounded text-xs">APN_1.1</code> user agent or <code class="bg-slate-100 text-slate-800 px-1 py-0.5 rounded text-xs">aws-apn-id</code> tags are firing.</span>
                 </div>
                 <div class="flex gap-3">
                     <span class="text-saasnova text-[10px] font-bold uppercase tracking-widest shrink-0 pt-[5px]">Why it matters</span>
-                    <span class="text-slate-700 text-[15px] leading-relaxed font-medium">You get proof that AWS is attributing your revenue, not an assumption that it might be working.</span>
+                    <span class="text-slate-700 text-[15px] leading-relaxed font-medium">You get mathematical proof that AWS is receiving your revenue telemetry, not an assumption.</span>
                 </div>
             </div>
 
@@ -389,18 +397,19 @@
                 <h3 class="text-xl font-bold mb-3 text-slate-900">Audit Readiness</h3>
                 <div class="mb-4 flex gap-3">
                     <span class="text-slate-500 text-[10px] font-bold uppercase tracking-widest shrink-0 pt-[5px]">What</span>
-                    <span class="text-slate-600 text-[15px] leading-relaxed">You receive full written documentation proving compliance, ready to present to your AWS Partner Manager or for any internal audit.</span>
+                    <span class="text-slate-600 text-[15px] leading-relaxed">You receive full written documentation proving PRM compliance, ready to present to your AWS Partner Manager.</span>
                 </div>
                 <div class="flex gap-3">
                     <span class="text-saasnova text-[10px] font-bold uppercase tracking-widest shrink-0 pt-[5px]">Why it matters</span>
-                    <span class="text-slate-700 text-[15px] leading-relaxed font-medium">Compliance without a paper trail is invisible. We make your compliance provable and defensible.</span>
+                    <span class="text-slate-700 text-[15px] leading-relaxed font-medium">Compliance without a paper trail is invisible. We make your attribution status provable and defensible.</span>
                 </div>
             </div>
 
         </div>
     </div>
 </section>
-    
+
+<!-- THE 3-DAY TECHNICAL SPRINT -->
 <section class="py-12 md:py-16 bg-slate-50 border-t border-slate-200 reveal">
     <div class="max-w-[1200px] mx-auto px-6">
         <div class="max-w-[800px] mx-auto text-center mb-10 md:mb-12">
@@ -408,9 +417,9 @@
                 <span class="dot-green"></span>
                 <span class="text-green-700 font-bold text-[11px] uppercase tracking-widest">Done in 3 Days</span>
             </div>
-            <h2 class="text-3xl sm:text-4xl font-extrabold leading-tight tracking-tight text-slate-900 mb-4">The Activation Layer Behind Your AWS GTM</h2>
+            <h2 class="text-3xl sm:text-4xl font-extrabold leading-tight tracking-tight text-slate-900 mb-4">The Exact Steps to PRM Compliance</h2>
             <p class="text-lg text-slate-600 leading-relaxed font-normal">
-                <span class="font-semibold text-saasnova">SaaSNova</span> architects the compliance path. <span class="font-semibold text-rysun">Rysun Labs</span> executes the technical implementation. Your engineering team stays on your product.
+                <span class="font-semibold text-saasnova">SaaSNova</span> audits the architecture and validates the logs. <span class="font-semibold text-rysun">Rysun Labs</span> writes and executes the telemetry code. Your engineering team stays focused on your product.
             </p>
         </div>
 
@@ -421,8 +430,8 @@
                 <div class="w-24 h-24 mx-auto bg-white border-[6px] border-slate-100 rounded-full flex items-center justify-center mb-5 shadow-premium transition-transform duration-300 group-hover:-translate-y-1 group-hover:border-slate-200">
                     <span class="text-3xl font-extrabold text-slate-900">1</span>
                 </div>
-                <h3 class="text-xl font-bold mb-3 text-slate-900">Scoping Call</h3>
-                <p class="text-slate-600 text-[15px] leading-relaxed max-w-[320px] mx-auto">Audit & Architecture review to determine the correct PRM method (Tagging vs. SDK Agent) for your specific setup.</p>
+                <h3 class="text-xl font-bold mb-3 text-slate-900">Scoping & Architecture</h3>
+                <p class="text-slate-600 text-[15px] leading-relaxed max-w-[320px] mx-auto">SaaSNova determines the exact PRM method (IaC Tagging vs. SDK User Agent) for your specific deployment architecture.</p>
             </div>
 
             <div class="relative text-center group">
@@ -430,7 +439,7 @@
                     <span class="text-3xl font-extrabold text-slate-900">2</span>
                 </div>
                 <h3 class="text-xl font-bold mb-3 text-slate-900">Technical Implementation</h3>
-                <p class="text-slate-600 text-[15px] leading-relaxed max-w-[320px] mx-auto">Rysun engineers deploy SDK overrides or IaC tagging modules securely, without impacting your core product operations.</p>
+                <p class="text-slate-600 text-[15px] leading-relaxed max-w-[320px] mx-auto">Rysun engineers deploy SDK overrides or Tagging modules securely, maintaining SOC-2 standards without impacting core operations.</p>
             </div>
 
             <div class="relative text-center group">
@@ -438,7 +447,7 @@
                     <span class="text-3xl font-extrabold text-slate-900">3</span>
                 </div>
                 <h3 class="text-xl font-bold mb-3 text-slate-900">Validation & Sign-off</h3>
-                <p class="text-slate-600 text-[15px] leading-relaxed max-w-[320px] mx-auto">Compliance confirmed by querying AWS CloudTrail logs directly. Written sign-off report delivered to you.</p>
+                <p class="text-slate-600 text-[15px] leading-relaxed max-w-[320px] mx-auto">SaaSNova confirms compliance by querying AWS CloudTrail logs directly. Written sign-off report is delivered to you.</p>
             </div>
         </div>
 
@@ -462,35 +471,29 @@
             <div class="text-[11px] uppercase tracking-widest text-slate-400 font-bold mb-4">
                 The <span class="text-saasnova">SaaSNova</span> &times; <span class="text-rysun">Rysun</span> Orchestration Model
             </div>
-            <h2 class="text-3xl sm:text-4xl font-extrabold leading-tight tracking-tight text-white mb-4">AWS GTM strategy, certified technical execution. One point of contact.</h2>
+            <h2 class="text-3xl sm:text-4xl font-extrabold leading-tight tracking-tight text-white mb-4">Architecture meets Engineering. One point of contact.</h2>
             <p class="text-lg text-slate-400 leading-relaxed font-normal">
-                <span class="font-semibold text-saasnova">SaaSNova</span> owns your AWS marketplace GTM roadmap and ensures compliance aligns with your broader partner strategy. <span class="font-semibold text-rysun">Rysun Labs</span> delivers the certified technical deployment (SOC 2, AWS Well-Architected). You work with SaaSNova. We orchestrate the handoff and deliver compliance-ready results.
+                Complete compliance requires two disciplines. <span class="font-semibold text-saasnova">SaaSNova</span> designs the exact AWS telemetry schema and audits the logs to ensure AWS accepts the data. <span class="font-semibold text-rysun">Rysun Labs</span> delivers the certified technical deployment (SOC 2, AWS Well-Architected) without breaking your app. We orchestrate the handoff internally.
             </p>
         </div>
         
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-[900px] mx-auto">
             <div class="bg-slate-800 border border-slate-700 rounded-2xl p-8 hover:-translate-y-1 transition-transform duration-300">
                 <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center mb-5">
                     <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="#008BF8" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
                 </div>
-                <h3 class="text-xl font-bold mb-3 text-white">AWS Policy Translation</h3>
-                <p class="text-slate-400 text-[15px] leading-relaxed">SaaSNova translates vague AWS partner requirements into exact technical specifications, ensuring your deployment matches what AWS Partner Managers validate against.</p>
+                <div class="text-xs text-saasnova font-bold uppercase tracking-widest mb-1">Layer 1: The Brain</div>
+                <h3 class="text-xl font-bold mb-3 text-white">SaaSNova Architecture & Validation</h3>
+                <p class="text-slate-400 text-[15px] leading-relaxed">SaaSNova dictates exactly what AWS needs to see (SDK Agents vs. Resource Tags), maps it against your infrastructure, and ultimately queries CloudTrail to prove the data is flowing to your Partner Manager.</p>
             </div>
 
             <div class="bg-slate-800 border border-slate-700 rounded-2xl p-8 hover:-translate-y-1 transition-transform duration-300">
                 <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center mb-5">
                     <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="#D97706" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
                 </div>
-                <h3 class="text-xl font-bold mb-3 text-white">Certified Execution</h3>
-                <p class="text-slate-400 text-[15px] leading-relaxed">Rysun Labs deploys SDK overrides or IaC modules following SOC 2 and AWS Well-Architected standards, then validates CloudTrail telemetry against the PRM schema.</p>
-            </div>
-
-            <div class="bg-slate-800 border border-slate-700 rounded-2xl p-8 hover:-translate-y-1 transition-transform duration-300">
-                <div class="w-12 h-12 rounded-xl bg-green-500/10 border border-green-500/20 flex items-center justify-center mb-5">
-                    <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="#22C55E" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                </div>
-                <h3 class="text-xl font-bold mb-3 text-white">Ongoing GTM Positioning</h3>
-                <p class="text-slate-400 text-[15px] leading-relaxed">With compliance secured, SaaSNova positions you for ongoing AWS co-sell growth: MDF activation, field engagement, and board-attributable pipeline generation.</p>
+                <div class="text-xs text-rysun font-bold uppercase tracking-widest mb-1">Layer 2: The Hands</div>
+                <h3 class="text-xl font-bold mb-3 text-white">Rysun Certified Execution</h3>
+                <p class="text-slate-400 text-[15px] leading-relaxed">Rysun Labs writes and deploys the SDK overrides or IaC modules following strict SOC 2 and AWS Well-Architected standards, ensuring zero downtime and perfect integration with your existing stack.</p>
             </div>
         </div>
     </div>
@@ -520,7 +523,7 @@
                     <tr class="hover:bg-slate-50/50 transition-colors">
                         <td class="p-5 px-6 text-slate-900 text-[15px] font-semibold">Product Roadmap Impact</td>
                         <td class="p-5 px-6 text-slate-500 text-[15px] border-l border-slate-100">High. Requires 2-3 sprints from senior backend devs.</td>
-                        <td class="p-5 px-6 text-slate-900 text-[15px] font-bold border-l border-slate-100 bg-slate-50/30">Zero. Turnkey integration managed externally.</td>
+                        <td class="p-5 px-6 text-slate-900 text-[15px] font-bold border-l border-slate-100 bg-slate-50/30">Zero. Turnkey telemetry managed externally.</td>
                     </tr>
                     <tr class="hover:bg-slate-50/50 transition-colors">
                         <td class="p-5 px-6 text-slate-900 text-[15px] font-semibold">AWS APN Telemetry Expertise</td>
@@ -530,7 +533,7 @@
                     <tr class="hover:bg-slate-50/50 transition-colors">
                         <td class="p-5 px-6 text-slate-900 text-[15px] font-semibold">Compliance Assurance</td>
                         <td class="p-5 px-6 text-slate-500 text-[15px] border-l border-slate-100">Best-effort basis. High chance of AWS audit rejection.</td>
-                        <td class="p-5 px-6 text-slate-900 text-[15px] font-bold border-l border-slate-100 bg-slate-50/30">AWS validation-ready setup, delivered with sign-off.</td>
+                        <td class="p-5 px-6 text-slate-900 text-[15px] font-bold border-l border-slate-100 bg-slate-50/30">AWS CloudTrail validation, delivered with sign-off.</td>
                     </tr>
                     <tr class="hover:bg-slate-50/50 transition-colors">
                         <td class="p-5 px-6 text-slate-900 text-[15px] font-semibold">Time to Full Compliance</td>
@@ -556,7 +559,7 @@
             <div class="bg-white border border-slate-200 rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow">
                 <svg width="32" height="32" fill="#008BF8" viewBox="0 0 24 24" class="opacity-20 mb-4"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
                 <p class="text-slate-700 text-[16px] leading-relaxed italic mb-6">
-                    "PRM compliance is the gateway to AWS marketplace GTM, not the finish line. We built this activation service so ISVs can unlock co-sell access immediately, then focus on the real work: building board-attributable pipeline through AWS field engagement."
+                    "PRM compliance is purely an attribution infrastructure problem. We built this specific activation service because ISVs were wasting weeks trying to understand AWS telemetry rules. We translate the policy and validate the logs, so you know exactly what AWS is tracking."
                 </p>
                 <div class="flex items-center gap-3">
                     <div class="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center shrink-0 overflow-hidden border border-slate-300">
@@ -573,11 +576,11 @@
             <div class="bg-white border border-slate-200 rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow">
                 <svg width="32" height="32" fill="#D97706" viewBox="0 0 24 24" class="opacity-20 mb-4"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
                 <p class="text-slate-700 text-[16px] leading-relaxed italic mb-6">
-                    "AWS compliance shouldn't derail your engineering roadmap. Our SOC 2-certified team deploys PRM integrations at enterprise grade—SDK overrides, IaC modules, CloudTrail validation—so ISVs meet the July 31 deadline without distraction."
+                    "AWS compliance shouldn't derail your engineering roadmap. Once SaaSNova dictates the architecture, our SOC 2-certified team deploys the PRM integrations at enterprise grade, SDK overrides, IaC modules, so ISVs meet the July deadline without breaking core code."
                 </p>
                 <div class="flex items-center gap-3">
                     <div class="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center shrink-0 overflow-hidden border border-slate-300">
-                        <span class="text-slate-500 text-xs font-bold">VS</span>
+                        <img src="vishal-shukla.jpeg" alt="Vishal Shukla" class="w-full h-full object-cover">
                     </div>
                     <div>
                         <div class="text-slate-900 font-bold text-[14px]">Vishal Shukla</div>
@@ -594,8 +597,8 @@
     <div class="max-w-[960px] mx-auto px-6">
         <div class="text-center mb-10">
             <div class="text-[11px] uppercase tracking-widest text-slate-500 font-bold mb-4">Pricing</div>
-            <h2 class="text-3xl sm:text-4xl font-extrabold leading-tight tracking-tight mb-4 text-slate-900">Fixed Engagement. No Discovery. No Delays.</h2>
-            <p class="text-slate-600 text-lg font-normal">One price. One outcome. Activation in 3 days, not weeks.</p>
+            <h2 class="text-3xl sm:text-4xl font-extrabold leading-tight tracking-tight mb-4 text-slate-900">Fixed Engagement. Turnkey Telemetry.</h2>
+            <p class="text-slate-600 text-lg font-normal">One price. One outcome. Full attribution tracking in 3 days, not weeks.</p>
         </div>
 
         <!-- Pricing Card -->
@@ -606,27 +609,23 @@
                 <ul class="flex flex-col gap-4">
                     <li class="flex items-start gap-3 text-slate-600 text-[15px] font-medium">
                         <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="#008BF8" stroke-width="2.5" class="mt-0.5 shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                        Full PRM technical activation
-                    </li>
-                    <li class="flex items-start gap-3 text-slate-600 text-[15px] font-medium">
-                        <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="#D97706" stroke-width="2.5" class="mt-0.5 shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                        AWS CloudTrail telemetry configuration and verification
+                        PRM Telemetry Architecture & Strategy
                     </li>
                     <li class="flex items-start gap-3 text-slate-600 text-[15px] font-medium">
                         <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="#008BF8" stroke-width="2.5" class="mt-0.5 shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                        CRM integration mapping (Salesforce, HubSpot, or equivalent)
+                        Full technical implementation (Tagging/SDK)
                     </li>
                     <li class="flex items-start gap-3 text-slate-600 text-[15px] font-medium">
                         <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="#008BF8" stroke-width="2.5" class="mt-0.5 shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                        Go-To-Market (GTM) attribution setup
+                        AWS CloudTrail telemetry verification
                     </li>
                     <li class="flex items-start gap-3 text-slate-600 text-[15px] font-medium">
-                        <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="#22C55E" stroke-width="2.5" class="mt-0.5 shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                        <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="#008BF8" stroke-width="2.5" class="mt-0.5 shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                        Zero-downtime production deployment
+                    </li>
+                    <li class="flex items-start gap-3 text-slate-600 text-[15px] font-medium">
+                        <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="#008BF8" stroke-width="2.5" class="mt-0.5 shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
                         AWS partner sign-off documentation
-                    </li>
-                    <li class="flex items-start gap-3 text-slate-600 text-[15px] font-medium">
-                        <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="#22C55E" stroke-width="2.5" class="mt-0.5 shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                        Post-activation validation and written compliance report
                     </li>
                 </ul>
             </div>
@@ -640,16 +639,16 @@
                 </div>
                 <div class="text-slate-500 text-sm font-medium mb-8">No retainer. No hourly billing. No surprises.</div>
                 
-                <form action="https://www.paypal.com/ncp/payment/3DVTQRUKEU426" method="post" target="_blank" class="w-full m-0">
-                    <button type="submit" class="w-full inline-flex items-center justify-center gap-2.5 bg-aws hover:bg-aws-hover text-slate-900 font-bold uppercase tracking-[0.06em] rounded-md px-6 py-4 text-base transition-all duration-200 shadow-btn hover:shadow-btn-hover hover:-translate-y-[1px] active:translate-y-[1px] active:shadow-none">
+                <div class="w-full">
+                    <button onclick="openModal()" class="w-full inline-flex items-center justify-center gap-2.5 bg-aws hover:bg-aws-hover text-slate-900 font-bold uppercase tracking-[0.06em] rounded-md px-6 py-4 text-base transition-all duration-200 shadow-btn hover:shadow-btn-hover hover:-translate-y-[1px] active:translate-y-[1px] active:shadow-none">
                         <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
                         ACTIVATE PRM COMPLIANCE
                     </button>
-                </form>
+                </div>
                 
                 <div class="mt-5 flex items-center justify-center gap-1.5 text-slate-400 text-xs font-semibold">
                     <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
-                    Secure payment via PayPal
+                    Secure payment activation
                 </div>
             </div>
         </div>
@@ -661,31 +660,31 @@
                     <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
                 </div>
                 <div>
-                    <div class="text-green-800 font-extrabold text-xl md:text-2xl tracking-tight mb-1">Payment Confirmed. Sprint Started.</div>
-                    <div class="text-green-600 text-[15px] font-medium">Your PRM activation is immediately prioritized inside the methodology.</div>
+                    <div class="text-green-800 font-extrabold text-xl md:text-2xl tracking-tight mb-1">The Activation Process</div>
+                    <div class="text-green-600 text-[15px] font-medium">Your PRM compliance sprint starts immediately after checkout.</div>
                 </div>
             </div>
             
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-center sm:text-left">
                 <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
                     <div class="text-slate-400 font-mono text-[11px] font-bold mb-3">STEP 01</div>
-                    <div class="text-slate-900 font-bold text-[15px] mb-2">Onboarding Email</div>
-                    <div class="text-slate-600 text-sm leading-relaxed">Sent to you within 1 hour of payment confirmation.</div>
+                    <div class="text-slate-900 font-bold text-[15px] mb-2">Architecture Spec</div>
+                    <div class="text-slate-600 text-sm leading-relaxed"><span class="text-saasnova font-medium">SaaSNova</span> maps the required AWS telemetry path to your product structure.</div>
                 </div>
                 <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
                     <div class="text-slate-400 font-mono text-[11px] font-bold mb-3">STEP 02</div>
                     <div class="text-slate-900 font-bold text-[15px] mb-2">Access + Inputs</div>
-                    <div class="text-slate-600 text-sm leading-relaxed">We securely collect CRM details and the requested IAM role.</div>
+                    <div class="text-slate-600 text-sm leading-relaxed">We securely collect AWS Marketplace details and the requested IAM role.</div>
                 </div>
                 <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
                     <div class="text-slate-400 font-mono text-[11px] font-bold mb-3">STEP 03</div>
-                    <div class="text-slate-900 font-bold text-[15px] mb-2">PRM Activation</div>
-                    <div class="text-slate-600 text-sm leading-relaxed"><span class="text-rysun font-medium">Rysun</span> executes the technical setup. No action needed from you.</div>
+                    <div class="text-slate-900 font-bold text-[15px] mb-2">Engineering</div>
+                    <div class="text-slate-600 text-sm leading-relaxed"><span class="text-rysun font-medium">Rysun</span> executes the technical setup securely. No action needed from you.</div>
                 </div>
                 <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
                     <div class="text-slate-400 font-mono text-[11px] font-bold mb-3">STEP 04</div>
-                    <div class="text-slate-900 font-bold text-[15px] mb-2">AWS Validation</div>
-                    <div class="text-slate-600 text-sm leading-relaxed">AWS confirms your PRM is live. You receive written completion.</div>
+                    <div class="text-slate-900 font-bold text-[15px] mb-2">CloudTrail Audit</div>
+                    <div class="text-slate-600 text-sm leading-relaxed"><span class="text-saasnova font-medium">SaaSNova</span> confirms your PRM data is flowing. You receive sign-off.</div>
                 </div>
             </div>
         </div>
@@ -704,7 +703,7 @@
             <!-- FAQ Item 1 -->
             <div class="border border-slate-200 rounded-xl p-6 bg-slate-50">
                 <h3 class="text-[16px] font-bold text-slate-900 mb-2">Can our internal engineering team handle this?</h3>
-                <p class="text-slate-600 text-[14px] leading-relaxed">Yes, but it typically pulls senior backend developers off your core product roadmap for 2-3 sprints just to decipher AWS telemetry requirements and test implementations. We do it seamlessly in 3 days without interrupting your team.</p>
+                <p class="text-slate-600 text-[14px] leading-relaxed">Yes, but it typically pulls senior backend developers off your core product roadmap for 2-3 sprints just to decipher AWS telemetry requirements, apply <code class="bg-white border border-slate-200 px-1.5 py-0.5 rounded text-xs">APN_1.1</code> overrides, and test implementations. We do it seamlessly in 3 days without interrupting your team.</p>
             </div>
             <!-- FAQ Item 2 -->
             <div class="border border-slate-200 rounded-xl p-6 bg-slate-50">
@@ -714,12 +713,12 @@
             <!-- FAQ Item 3 -->
             <div class="border border-slate-200 rounded-xl p-6 bg-slate-50">
                 <h3 class="text-[16px] font-bold text-slate-900 mb-2">What happens if we miss the July 31 deadline?</h3>
-                <p class="text-slate-600 text-[14px] leading-relaxed">AWS will programmatically suspend your ACE pipeline access and freeze any MDF funding allocations because they will not be able to automatically attribute the revenue you generate.</p>
+                <p class="text-slate-600 text-[14px] leading-relaxed">Without PRM, AWS cannot attribute the revenue you drive. Because partner tier progression, MDF funding, and ACE eligibility are strictly tied to quantitative revenue metrics, your progress will stall entirely.</p>
             </div>
             <!-- FAQ Item 4 -->
             <div class="border border-slate-200 rounded-xl p-6 bg-slate-50">
-                <h3 class="text-[16px] font-bold text-slate-900 mb-2">Is the compliance validation guaranteed?</h3>
-                <p class="text-slate-600 text-[14px] leading-relaxed">Our implementation is complete only when CloudTrail telemetry matches exact AWS requirements. You receive written sign-off confirming technical compliance &mdash; the strongest validation available short of AWS confirmation itself.</p>
+                <h3 class="text-[16px] font-bold text-slate-900 mb-2">Is the compliance validation assured?</h3>
+                <p class="text-slate-600 text-[14px] leading-relaxed">Our implementation is complete only when CloudTrail telemetry exactly matches AWS requirements. SaaSNova performs this audit and you receive written sign-off confirming technical compliance.</p>
             </div>
         </div>
     </div>
@@ -734,23 +733,22 @@
         </div>
         
         <h2 class="text-4xl sm:text-5xl md:text-[50px] font-extrabold leading-[1.05] tracking-tight mb-5 text-slate-900">
-            The deadline doesn't move,<br>
-            your PRM must.
+            Fix your AWS revenue attribution today.
         </h2>
         
         <p class="text-slate-600 text-lg md:text-xl font-normal leading-relaxed max-w-[560px] mx-auto mb-10">
-            Execution capacity is prioritized on a first-come basis. Once the deadline passes, there is no recovery path for blocked accounts.
+            Execution capacity is prioritized on a first-come basis. Ensure your partner tier progression continues without interruption.
         </p>
         
-        <form action="https://www.paypal.com/ncp/payment/3DVTQRUKEU426" method="post" target="_blank" class="flex justify-center mb-6">
-            <button type="submit" class="inline-flex items-center justify-center gap-2.5 bg-aws hover:bg-aws-hover text-slate-900 font-bold uppercase tracking-[0.06em] rounded-md px-10 py-5 text-[17px] transition-all duration-200 shadow-btn hover:shadow-btn-hover hover:-translate-y-[1px] active:translate-y-[1px] active:shadow-none w-full sm:w-auto">
+        <div class="flex justify-center mb-6">
+            <button onclick="openModal()" class="inline-flex items-center justify-center gap-2.5 bg-aws hover:bg-aws-hover text-slate-900 font-bold uppercase tracking-[0.06em] rounded-md px-10 py-5 text-[17px] transition-all duration-200 shadow-btn hover:shadow-btn-hover hover:-translate-y-[1px] active:translate-y-[1px] active:shadow-none w-full sm:w-auto">
                 <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
                 ACTIVATE PRM COMPLIANCE
                 <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" class="ml-1"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
             </button>
-        </form>
+        </div>
         
-        <p class="text-slate-500 text-sm font-medium">Service execution begins within hours of payment confirmation.</p>
+        <p class="text-slate-500 text-sm font-medium">We initiate your PRM activation sprint upon form submission.</p>
     </div>
 </section>
 
@@ -776,7 +774,7 @@
                 
                 <!-- AWS Partnership Marker Below Logos -->
                 <div class="flex items-center gap-2 mt-1">
-                    <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Architected by SaaSNova — Executed with Rysun Labs</span>
+                    <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Architected by SaaSNova ~ Executed with Rysun Labs</span>
                     <img src="aws-logo.png" alt="AWS" class="h-4 object-contain opacity-80"
                         onerror="this.outerHTML='<span class=\'font-extrabold text-sm text-aws opacity-80\'>AWS</span>'">
                 </div>
@@ -798,19 +796,187 @@
                     </a>
                 </div>
             </div>
-
         </div>
-        
-        <!-- Copyright Banner -->
-        <div class="pt-6 border-t border-slate-200 flex justify-left text-left">
-            <p class="text-slate-500 text-[13px] font-medium">&copy; 2026 PRM Activation Program Architected by <span class="font-semibold text-saasnova">SaaSNova</span>. Technical Execution Delivered in Partnership with <span class="font-semibold text-rysun">Rysun Labs</span>. Service execution begins post-payment.</p>
-        </div>
+    <!-- Support + Links -->
+    <div class="flex flex-col md:flex-row justify-between items-center text-sm text-slate-500 mb-4 gap-3">
+      <div>
+        Support: 
+        <a href="mailto:operation@saasnova.ai" class="text-saasnova font-medium hover:underline">
+          operation@saasnova.ai
+        </a>
+      </div>
 
+      <div class="flex items-center gap-3 text-[12px]">
+        <a href="#" class="hover:underline">Terms</a>
+        <span class="text-slate-300">•</span>
+        <a href="#" class="hover:underline">Privacy</a>
+      </div>
     </div>
+
+    <!-- Divider -->
+    <div class="border-t border-slate-200 pt-4 text-[12px] text-slate-500 leading-relaxed">
+      © 2026 SaaSNova. PRM activation ensures AWS revenue attribution readiness. 
+      Service begins after payment confirmation and onboarding inputs. 
+      Does not guarantee co-sell, MDF access, or pipeline generation.
+    </div>
+
+  </div>
 </footer>
 
+<!-- REGISTRATION MODAL (The Qualification Gate) -->
+<div id="registrationModal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-slate-900/60 backdrop-blur-sm px-4 py-6">
+    <div class="bg-white rounded-2xl w-full max-w-[560px] shadow-2xl relative overflow-hidden slide-up max-h-[90vh] flex flex-col">
+        <!-- Close Button -->
+        <button onclick="closeModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 transition-colors z-10 bg-white rounded-full p-1">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+
+        <!-- Form View -->
+        <div id="modalFormView" class="p-8 overflow-y-auto modal-scroll">
+            <h3 class="text-2xl font-bold text-slate-900 mb-2">Initiate PRM Activation Sprint</h3>
+            <p class="text-slate-500 text-sm mb-6">Please provide your AWS environment details to securely scope your implementation.</p>
+            
+            <form id="prmForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                <!-- Identity -->
+                <div>
+                    <label class="block text-[11px] font-bold text-slate-700 uppercase tracking-wide mb-1">Full Name</label>
+                    <input type="text" id="fullName" required class="w-full border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-aws/50 focus:border-aws transition-all">
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-[11px] font-bold text-slate-700 uppercase tracking-wide mb-1">Company</label>
+                        <input type="text" id="companyName" required class="w-full border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-aws/50 focus:border-aws transition-all">
+                    </div>
+                    <div>
+                        <label class="block text-[11px] font-bold text-slate-700 uppercase tracking-wide mb-1">Work Email</label>
+                        <input type="email" id="workEmail" required class="w-full border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-aws/50 focus:border-aws transition-all">
+                    </div>
+                </div>
+
+                <!-- AWS Specifics -->
+                <div class="border-t border-slate-100 pt-4 mt-2">
+                    <label class="block text-[11px] font-bold text-slate-700 uppercase tracking-wide mb-1">AWS Account ID</label>
+                    <input type="text" id="awsAccountId" placeholder="e.g. 123456789012" required pattern="\d{12}" title="Must be a 12-digit AWS Account ID" class="w-full border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-aws/50 focus:border-aws transition-all">
+                </div>
+
+                <div>
+                    <label class="block text-[11px] font-bold text-slate-700 uppercase tracking-wide mb-1">AWS Marketplace Listing Status</label>
+                    <select id="listingStatus" onchange="checkListingStatus()" class="w-full border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-aws/50 focus:border-aws transition-all bg-white">
+                        <option value="live">Live (Public or Private Offer)</option>
+                        <option value="in_progress">In Progress</option>
+                        <option value="not_listed">Not Listed</option>
+                    </select>
+                    <!-- Warning message if not listed -->
+                    <div id="listingWarning" class="hidden mt-2 flex items-start gap-2 bg-red-50 border border-red-200 text-red-700 p-3 rounded-lg text-[13px]">
+                        <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" class="shrink-0 mt-0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                        <span>A valid AWS Marketplace listing is required to activate PRM. You cannot proceed until your product is listed.</span>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-[11px] font-bold text-slate-700 uppercase tracking-wide mb-1">Number of AWS Marketplace listings requiring PRM activation</label>
+                    <select id="prmCount" class="w-full border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-aws/50 focus:border-aws transition-all bg-white">
+                        <option value="1">1 Listing</option>
+                        <option value="2">2 Listings</option>
+                        <option value="3+">3+ Listings</option>
+                    </select>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-[11px] font-bold text-slate-700 uppercase tracking-wide mb-1">Deployment Model</label>
+                        <select id="deploymentModel" class="w-full border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-aws/50 focus:border-aws transition-all bg-white">
+                            <option value="saas">SaaS (Partner Account)</option>
+                            <option value="customer">Customer Account Deploy</option>
+                            <option value="hybrid">Hybrid</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-[11px] font-bold text-slate-700 uppercase tracking-wide mb-1">IAM Access Readiness</label>
+                        <select id="iamReady" class="w-full border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-aws/50 focus:border-aws transition-all bg-white">
+                            <option value="yes">Yes, can provide access</option>
+                            <option value="need_guidance">Need guidance</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Hidden UUID Field -->
+                <input type="hidden" id="uniqueId" value="">
+
+                <div class="pt-4">
+                    <button type="submit" id="submitBtn" class="w-full flex items-center justify-center gap-2 bg-aws hover:bg-aws-hover text-slate-900 font-bold uppercase tracking-[0.06em] rounded-lg px-6 py-3.5 text-[15px] transition-all shadow-btn hover:shadow-btn-hover">
+                        PROCEED TO SECURE PAYMENT
+                        <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+                    </button>
+                    <p class="text-center text-[11px] text-slate-500 mt-3 font-medium">Your data is securely scoped for execution architecture.</p>
+                </div>
+            </form>
+        </div>
+
+        <!-- Payment View (Shows after form submit) -->
+        <div id="modalPaymentView" class="p-8 hidden text-center flex-col items-center justify-center h-full">
+            <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 shrink-0">
+                <svg width="32" height="32" fill="none" viewBox="0 0 24 24" stroke="#16a34a" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+            </div>
+            <h3 class="text-2xl font-bold text-slate-900 mb-1">System Linked</h3>
+            <p class="text-slate-500 text-sm mb-4">Scan the QR code or click below to complete payment via PayPal. Your technical sprint will be matched to your unique Session ID.</p>
+            
+            <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 mb-5 inline-block w-full max-w-[240px]">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.paypal.com/ncp/payment/3DVTQRUKEU426" alt="Payment QR Code" class="w-32 h-32 mx-auto rounded-lg shadow-sm border border-slate-100 bg-white p-1">
+                <div class="mt-3 text-[11px] font-bold text-slate-500 uppercase tracking-widest">Fixed Fee: $7,200</div>
+                <div class="mt-1 text-[10px] text-slate-400 font-mono" id="displayUuid">Ref: </div>
+            </div>
+
+            <a href="https://www.paypal.com/ncp/payment/3DVTQRUKEU426" target="_blank" class="w-full flex items-center justify-center gap-2 bg-[#003087] hover:bg-[#002266] text-white font-bold uppercase tracking-[0.06em] rounded-lg px-6 py-3.5 text-[15px] transition-all shadow-md">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81 1.01 1.15 1.304 2.82 1.105 4.693-.418 3.92-2.585 6.13-6.177 6.13h-1.637c-.77 0-1.425.568-1.54 1.325l-1.076 6.843c-.053.33-.338.57-.674.57h-3.076zM15.42 6.643c-.47-.463-1.32-.68-2.61-.68H7.318l-1.78 11.23h2.385l.775-4.912c.115-.758.77-1.326 1.54-1.326h1.638c2.463 0 4.095-1.417 4.412-4.14.135-1.162.012-2.22-.387-2.91L15.42 6.64z"/></svg>
+                PAY NOW VIA PAYPAL
+            </a>
+            <p class="text-xs text-slate-400 mt-4">We do not store payment details.</p>
+        </div>
+    </div>
+</div>
+
+<!-- OFFLINE CHATBOT -->
+<div id="chatWidget" class="fixed bottom-4 right-4 z-50 flex flex-col items-end">
+    <!-- Chat Window -->
+    <div id="chatWindow" class="bg-white border border-slate-200 rounded-2xl shadow-premium w-[340px] mb-4 hidden overflow-hidden flex flex-col slide-up">
+        <div class="bg-slate-900 p-4 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                <span class="text-white font-bold text-sm">SaaSNova × Rysun Assistant</span>
+            </div>
+            <button onclick="toggleChat()" class="text-slate-400 hover:text-white transition-colors p-1">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+        </div>
+        
+        <div id="chatHistory" class="p-4 h-[260px] overflow-y-auto modal-scroll bg-slate-50 flex flex-col gap-3 text-[13px]">
+            <!-- Bot Welcome Message -->
+            <div class="bg-white border border-slate-200 rounded-xl rounded-tl-none p-3 shadow-sm text-slate-700 w-[90%]">
+                Hi! 👋 I'm here to help you understand our joint PRM compliance solution.
+            </div>
+        </div>
+        
+        <div id="chatOptions" class="p-3 bg-white border-t border-slate-100 flex flex-col gap-2">
+            <button onclick="handleChat('Why choose SaaSNova × Rysun?')" class="text-left text-[12px] font-semibold text-saasnova bg-blue-50 hover:bg-blue-100 px-3 py-2 rounded-lg transition-colors">Why choose SaaSNova × Rysun?</button>
+            <button onclick="handleChat('What happens if we miss the deadline?')" class="text-left text-[12px] font-semibold text-saasnova bg-blue-50 hover:bg-blue-100 px-3 py-2 rounded-lg transition-colors">What happens if we miss the deadline?</button>
+            <button onclick="handleChat('How does the 3-day sprint work?')" class="text-left text-[12px] font-semibold text-saasnova bg-blue-50 hover:bg-blue-100 px-3 py-2 rounded-lg transition-colors">How does the 3-day sprint work?</button>
+        </div>
+    </div>
+    
+    <!-- Chat Toggle Button (Blue Circle) -->
+    <button onclick="toggleChat()" class="w-14 h-14 bg-[#008BF8] hover:bg-[#0074d0] text-white rounded-full flex items-center justify-center shadow-lg transition-transform hover:scale-105 active:scale-95">
+        <svg width="26" height="26" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.046 2 11c0 2.85 1.488 5.39 3.82 7.02l-.84 3.37a.5.5 0 0 0 .61.59l3.66-1.02a10.93 10.93 0 0 0 2.75.34c5.523 0 10-4.046 10-9s-4.477-9-10-9zm-2.5 10.5h-2a1 1 0 1 1 0-2h2a1 1 0 1 1 0 2zm3.5 0h-2a1 1 0 1 1 0-2h2a1 1 0 1 1 0 2zm3.5 0h-2a1 1 0 1 1 0-2h2a1 1 0 1 1 0 2z"/></svg>
+    </button>
+</div>
+
+<!-- SCROLL TO TOP BUTTON (Dark Circle, White Chevron) -->
+<button id="scrollToTopBtn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="fixed bottom-20 right-4 z-40 w-14 h-14 bg-[#0F172A] hover:bg-slate-800 text-white rounded-full flex items-center justify-center shadow-lg transition-all transform translate-y-20 opacity-0 pointer-events-none">
+    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"></path></svg>
+</button>
+
 <script>
-// Countdown Timer Logic
+// ---------- COUNTDOWN TIMER ----------
 function updateCountdown() {
     const deadline = new Date('2026-07-31T23:59:59');
     const now = new Date();
@@ -841,7 +1007,7 @@ function updateCountdown() {
 updateCountdown();
 setInterval(updateCountdown, 1000);
 
-// Smooth Reveal Animation on Scroll
+// ---------- SCROLL ANIMATIONS & TOP BUTTON ----------
 const observerOptions = {
     root: null,
     rootMargin: '0px',
@@ -858,6 +1024,153 @@ const observer = new IntersectionObserver((entries, observer) => {
 }, observerOptions);
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+window.addEventListener('scroll', () => {
+    const btn = document.getElementById('scrollToTopBtn');
+    if (window.scrollY > 600) {
+        btn.classList.remove('translate-y-20', 'opacity-0', 'pointer-events-none');
+    } else {
+        btn.classList.add('translate-y-20', 'opacity-0', 'pointer-events-none');
+    }
+});
+
+// ---------- MODAL & QUALIFICATION LOGIC ----------
+const modal = document.getElementById('registrationModal');
+const formView = document.getElementById('modalFormView');
+const paymentView = document.getElementById('modalPaymentView');
+
+function openModal() {
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+    formView.classList.remove('hidden');
+    paymentView.classList.add('hidden');
+}
+
+function closeModal() {
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+}
+
+// Close modal on click outside
+modal.addEventListener('click', (e) => {
+    if (e.target === modal) closeModal();
+});
+
+// Qualification Gate Logic
+function checkListingStatus() {
+    const val = document.getElementById('listingStatus').value;
+    const btn = document.getElementById('submitBtn');
+    const warn = document.getElementById('listingWarning');
+    
+    if(val === 'not_listed') {
+        btn.disabled = true;
+        btn.classList.add('opacity-50', 'cursor-not-allowed');
+        warn.classList.remove('hidden');
+    } else {
+        btn.disabled = false;
+        btn.classList.remove('opacity-50', 'cursor-not-allowed');
+        warn.classList.add('hidden');
+    }
+}
+
+// UUID Generator polyfill
+function generateUUID() {
+    if (typeof crypto !== 'undefined' && crypto.randomUUID) {
+        return crypto.randomUUID();
+    }
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+        var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+        return v.toString(16);
+    });
+}
+
+function handleFormSubmit(event) {
+    event.preventDefault(); // Stop normal form submission
+
+    // Generate Unique ID for the session
+    const sessionUuid = generateUUID();
+    document.getElementById('uniqueId').value = sessionUuid;
+
+    // Gather Data
+    const formData = {
+        uniqueId: sessionUuid,
+        fullName: document.getElementById('fullName').value,
+        companyName: document.getElementById('companyName').value,
+        workEmail: document.getElementById('workEmail').value,
+        awsAccountId: document.getElementById('awsAccountId').value,
+        listingStatus: document.getElementById('listingStatus').value,
+        prmCount: document.getElementById('prmCount').value,
+        deploymentModel: document.getElementById('deploymentModel').value,
+        iamReady: document.getElementById('iamReady').value,
+        timestamp: new Date().toISOString()
+    };
+
+    // -> ACTION: Replace the URL below with your actual webhook URL (Airtable / Zapier / HubSpot / n8n).
+    const WEBHOOK_URL = 'https://hooks.zapier.com/hooks/catch/123456/abcdef/'; 
+
+    console.log("Sending data to CRM...", formData);
+    
+    // In production, uncomment this to actually send data to your Webhook:
+    /*
+    fetch(WEBHOOK_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)
+    }).then(res => console.log('Data saved successfully'))
+      .catch(err => console.error('Webhook error:', err));
+    */
+
+    // Update UI with Reference ID
+    document.getElementById('displayUuid').innerText = 'Ref: ' + sessionUuid.split('-')[0].toUpperCase();
+
+    // Transition UI to Payment Step immediately
+    formView.classList.add('hidden');
+    paymentView.classList.remove('hidden');
+    paymentView.classList.add('fade-in');
+}
+
+// ---------- CHATBOT LOGIC ----------
+const chatWindow = document.getElementById('chatWindow');
+const chatHistory = document.getElementById('chatHistory');
+const chatOptions = document.getElementById('chatOptions');
+
+const chatAnswers = {
+    'Why choose SaaSNova × Rysun?': 'We provide end-to-end compliance. SaaSNova architects the telemetry and audits the AWS CloudTrail logs, while Rysun’s SOC-2 certified team executes the code. You get strategy and engineering in one turnkey package.',
+    'What happens if we miss the deadline?': 'Without active PRM, AWS cannot attribute your revenue. This stalls your partner tier progression and risks your MDF and ACE program eligibility.',
+    'How does the 3-day sprint work?': 'It is a seamless handoff:\n1. Architecture Spec (SaaSNova)\n2. Access Setup\n3. Technical Execution (Rysun)\n4. CloudTrail Audit & Sign-off (SaaSNova).'
+};
+
+function toggleChat() {
+    if (chatWindow.classList.contains('hidden')) {
+        chatWindow.classList.remove('hidden');
+        chatWindow.classList.add('slide-up');
+    } else {
+        chatWindow.classList.add('hidden');
+        chatWindow.classList.remove('slide-up');
+    }
+}
+
+function handleChat(question) {
+    // Add User Message
+    const userMsg = document.createElement('div');
+    userMsg.className = 'bg-aws text-slate-900 rounded-xl rounded-tr-none p-3 shadow-sm self-end max-w-[85%] fade-in font-medium';
+    userMsg.innerText = question;
+    chatHistory.appendChild(userMsg);
+
+    // Scroll to bottom
+    chatHistory.scrollTop = chatHistory.scrollHeight;
+
+    // Simulate typing delay
+    setTimeout(() => {
+        // Add Bot Reply
+        const botMsg = document.createElement('div');
+        botMsg.className = 'bg-white border border-slate-200 rounded-xl rounded-tl-none p-3 shadow-sm text-slate-700 w-[90%] fade-in whitespace-pre-line';
+        botMsg.innerHTML = chatAnswers[question];
+        chatHistory.appendChild(botMsg);
+        
+        chatHistory.scrollTop = chatHistory.scrollHeight;
+    }, 500);
+}
 </script>
 
 </body>
