@@ -6,6 +6,11 @@
     <title>AWS PRM Activation | SaaSNova & Rysun | Deadline July 31, 2026</title>
     <meta name="description" content="Turnkey AWS PRM activation. Certified 3-day technical implementation and compliance validation before the July 31 enforcement deadline."/>
     
+    <link rel="icon" type="image/png" sizes="32x32" href="logo-favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="logo-favicon-16x16.png">
+    <link rel="apple-touch-icon" href="logo-favicon1.png">
+    <link rel="icon" type="image/png" href="logo-favicon.png">
+    
     <link rel="canonical" href="https://prm.saasnova.ai/" />
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -270,9 +275,7 @@
                     <div class="bg-slate-600 border border-slate-700 rounded-xl py-3 px-5 text-center flex-auto shadow-sm">
                         <div class="text-white font-bold text-[14px] sm:text-[12px]">SI / GSI Partners</div>
                     </div>
-                    <div class="bg-slate-600 border border-slate-700 rounded-xl py-3 px-5 text-center flex-auto shadow-sm min-w-[200px]">
-                        <div class="text-white font-bold text-[14px] sm:text-[12px]">AWS Marketplace Sellers</div>
-                    </div>
+               
                 </div>
             </div>
         </div>
@@ -855,7 +858,6 @@ AWS telemetry relies entirely on specific tags or SDK agent strings. If these ar
                             <option value="" disabled selected>Select type</option>
                             <option value="saas">B2B SaaS / ISV</option>
                             <option value="si">SI / GSI Partner</option>
-                            <option value="marketplace">AWS Marketplace Seller</option>
                             <option value="other">Other</option>
                         </select>
                     </div>
@@ -1024,7 +1026,7 @@ function handleFormSubmit(event) {
         company: document.getElementById('companyName').value,
         email: document.getElementById('workEmail').value,
         productType: document.getElementById('productType').value,
-        marketplaceStatus: document.getElementById('marketplaceStatus').value,
+        awsListingsCount: document.getElementById('awsListingsCount').value, 
         awsAccountId: document.getElementById('awsAccountId').value || 'Not provided',
         timestamp: new Date().toISOString()
     };
